@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="container">
-    <div class="jumbotron">
+    <div  class="container">
+    <div id="world" class="jumbotron">
           <h1 class="display-4">Hello World!</h1>
             <p class="lead">Hello World is displayed 4!</p>
             <hr my-4>
@@ -41,7 +41,7 @@
         </div>
         </div>
 
-        <div id="blue" class="jumbotron jumbotron-fluid text-white">
+        <div id="blue" class="jumbotron jumbotron-fluid text-red">
             <div class="container">
                 <h1 class="display-4">Extra Demo</h1>
                 <p>Fluid Jumbotrons occupy the entire horizontal screen...</p>
@@ -49,7 +49,7 @@
             </div>
         </div>
 
-        <div class="jumbo jumbotron-fluid text-white">
+        <div id="jumbo" class="jumbotron-fluid text-red">
                 <div class="container">
                     <h1 class="display-4">Background-Img</h1>
                     <p>Fluid Jumbotrons occupy the entire horizontal screen...</p>
@@ -58,16 +58,22 @@
             </div>
 
         <style>
-           #blue { background: #2980b9;
+           #blue { 
+            /*background: #2980b9;*/
+            background-position: center;
+            background-image: url("https://images.unsplash.com/photo-1514418197935-e0cac2bb695a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=73703fc107d2c3f2835ec8af1f981c25&auto=format&fit=crop&w=1950&q=80");
         }
-           /* #jumbo{ 
-                background-image: url("leap-design.jpg");
-                background-size: cover;
-        } */
-    .jumbo {
-        background-size: cover;
-        background-image: url("leap-design.jpg");
-    }
+            
+        
+        #jumbo {
+            background-position: center;
+            background-image: url("https://images.unsplash.com/photo-1514418197935-e0cac2bb695a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=73703fc107d2c3f2835ec8af1f981c25&auto=format&fit=crop&w=1950&q=80");
+        }
+
+        #world {
+            background-position: center;
+            background-image: url("https://images.unsplash.com/photo-1514418197935-e0cac2bb695a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=73703fc107d2c3f2835ec8af1f981c25&auto=format&fit=crop&w=1950&q=80");
+        }
 
         </style>
     <!-- Optional JavaScript -->
